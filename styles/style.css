@@ -3,9 +3,12 @@ h1 {
 }
 
 img {
-    width: 100px;
+    width: 300px;
+    margin-left: 10px;
+    border: 20px solid black;
+    padding: 30px;
 }
 
-img.zdjecie {
-    width: 300px;
+table img {
+    width: 100px;
 }
