@@ -1,0 +1,11 @@
+h1 {
+    color: green;
+}
+
+img {
+    width: 100px;
+}
+
+img.zdjecie {
+    width: 300px;
+}
