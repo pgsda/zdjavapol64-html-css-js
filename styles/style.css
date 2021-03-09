@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #F8F9FA;
 }
 
 h1, h3 {
@@ -10,4 +11,21 @@ h1, h3 {
 header {
     background-color: #199DBF;
     padding: 20px;
+    color: #F8F9FA;
+}
+
+header nav a {
+    background-color: #003366;
+    color: #F8F9FA;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    width: 120px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: center;
+    border-bottom: 2px solid wheat;
+    border-right: 2px solid wheat;
 }
