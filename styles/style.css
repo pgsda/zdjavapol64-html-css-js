@@ -33,15 +33,21 @@ header nav a {
 footer {
     background-image: url('../img/kot2.jpg');
     background-size: contain;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     position: fixed;
     width: 100%;
     bottom: 0;
-    height: 100px;
+    height: 20px;
+    background-color: #003366;
 }
 
 main img {
     display: block;
     margin: 0 auto;
+    width: 200px;
+}
+
+main {
+    margin-bottom: 50px;
 }
