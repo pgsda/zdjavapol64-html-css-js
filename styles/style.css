@@ -29,3 +29,19 @@ header nav a {
     border-bottom: 2px solid wheat;
     border-right: 2px solid wheat;
 }
+
+footer {
+    background-image: url('../img/kot2.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+}
+
+main img {
+    display: block;
+    margin: 0 auto;
+}
