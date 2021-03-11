@@ -1,9 +1,16 @@
 var cat_image = document.querySelector('main img');
-var c = 0;
+
+function after_load() {
+    document.getElementById('counter').innerHTML = this.responseText;
+}
 
 function cat_over() {
-    c++;
-    document.getElementById('counter').innerHTML = c;
+    var xhttp = new XMLHttpRequest();
+
+    xhttp.onload = after_load;
+
+    xhttp.open('GET', 'najechales.txt', true);
+    xhttp.send();
 }
 
 cat_image.addEventListener('mouseover', cat_over);

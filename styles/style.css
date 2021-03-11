@@ -30,6 +30,14 @@ header nav a {
     border-right: 2px solid wheat;
 }
 
+header nav a:hover {
+    background-color: #001c38;
+    border-bottom: 0;
+    border-right: 0;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
 footer {
     background-image: url('../img/kot2.jpg');
     background-size: contain;
@@ -45,6 +53,14 @@ footer {
 main img {
     display: block;
     margin: 0 auto;
+    background-color: chocolate;
+    transform: skew(40deg) scale(0.5) translate(20px, 100px);
+    transition: all 2s;
+}
+
+main img:hover {
+    background-color: gold;
+    transform: skew(-40deg);
 }
 
 main {
