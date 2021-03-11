@@ -1,7 +1,14 @@
 var cat_image = document.querySelector('main img');
 
 function after_load() {
-    document.getElementById('counter').innerHTML = this.responseText;
+    var dane_kotow = JSON.parse(this.responseText);
+    var lista = '';
+    for (var i = 0; i < dane_kotow.length; i++) {
+        lista += '<li>' + dane_kotow[i].imie + ' ' + dane_kotow[i].nazwisko + '</li>';
+    }
+    // document.getElementById('imie_kota').innerHTML = dane_kota.imie;
+    // document.getElementById('nazwisko_kota').innerHTML = dane_kota.nazwisko;
+    document.getElementById('wszystkie_koty').innerHTML = lista;
 }
 
 function cat_over() {
@@ -9,7 +16,7 @@ function cat_over() {
 
     xhttp.onload = after_load;
 
-    xhttp.open('GET', 'najechales.txt', true);
+    xhttp.open('GET', 'dane_kotow.json', true);
     xhttp.send();
 }
 
